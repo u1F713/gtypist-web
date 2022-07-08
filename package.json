@@ -1,0 +1,39 @@
+{
+  "name": "gtypist-web",
+  "version": "0.0.0",
+  "author": "Joseph Estevez<joseph.estevez@protonmail.com>",
+  "packageManager": "pnpm@7.4.0",
+  "license": "LGPL-3.0-or-later",
+  "repository": "git+https://github.com/mercuryssh/gtypist-web",
+  "homepage": "https://github.com/mercuryssh/gtypist-web#readme",
+  "scripts": {
+    "build": "vite build",
+    "server": "vite preview",
+    "dev": "vite",
+    "lint": "eslint --fix \"{src,test}/**/*.tsx\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.30.5",
+    "@vitejs/plugin-react": "^1.3.2",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "^2.7.1",
+    "typescript": "*",
+    "vite": "^2.9.14",
+    "vite-tsconfig-paths": "^3.5.0"
+  }
+}
