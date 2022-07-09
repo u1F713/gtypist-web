@@ -1,6 +1,6 @@
 import { nanoid } from '@reduxjs/toolkit'
 import { FunctionComponent, useEffect } from 'react'
-import { useAppDispatch, useAppSelector } from '@app/hooks/app.selectors'
+import { useAppDispatch, useAppSelector } from '~/app/app.selectors'
 import { lessonsActions } from '~/features/lessons/lessons.slice'
 
 const Default: FunctionComponent = () => {
