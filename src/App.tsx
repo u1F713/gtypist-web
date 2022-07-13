@@ -3,8 +3,8 @@ import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '~/styles/global.styled'
 import TangoDark from '~/styles/themes/tango-dark'
-import Default from '../layouts/default'
-import store from './store'
+import Default from './layouts/default'
+import store from './store/store'
 
 const App: FunctionComponent = () => {
   return (
