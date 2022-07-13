@@ -10,7 +10,6 @@ export const Wrapper = styled.header`
 
 export const AppInfo = styled.div`
   display: flex;
-  gap: 1em;
 
   .app-name {
     color: #${(props) => props.theme.colors[13].code};

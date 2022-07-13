@@ -11,7 +11,7 @@ const Header: FunctionComponent<HeaderProps> = ({ selectedMenu }) => {
       <li>{selectedMenu}</li>
       <li>
         <Styles.AppInfo>
-          <span className="app-name">gtypist web</span>
+          <span className="app-name">gtypist web{'\u00a0'}</span>
           <span className="app-version">{APP_VERSION}</span>
         </Styles.AppInfo>
       </li>
