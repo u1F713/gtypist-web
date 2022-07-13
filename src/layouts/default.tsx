@@ -1,6 +1,7 @@
 import { nanoid } from '@reduxjs/toolkit'
 import { FunctionComponent, useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '~/app/app.selectors'
+import Header from '~/components/Header/Header'
 import { lessonsActions } from '~/features/lessons/lessons.slice'
 
 const Default: FunctionComponent = () => {
@@ -17,6 +18,7 @@ const Default: FunctionComponent = () => {
 
   return (
     <main>
+      <Header selectedMenu="current" />
       <div>
         <h1>
           I jumped in the river and what did I see? <br /> Black-eyed angels swam with me
