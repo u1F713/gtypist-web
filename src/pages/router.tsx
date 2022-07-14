@@ -1,11 +1,12 @@
 import { FunctionComponent } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Display from '~/layouts/Display'
 
 const Router: FunctionComponent = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<>Index Route</>} />
+        <Route index element={<Display />} />
         <Route path="help" element={<>Help</>} />
       </Routes>
     </BrowserRouter>
