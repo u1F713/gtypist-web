@@ -5,7 +5,7 @@ interface HeaderProps {
   selectedMenu: string
 }
 
-const Header: FunctionComponent<HeaderProps> = ({ selectedMenu }) => {
+export const Header: FunctionComponent<HeaderProps> = ({ selectedMenu }) => {
   return (
     <Styles.Wrapper>
       <li>{selectedMenu}</li>
@@ -18,5 +18,3 @@ const Header: FunctionComponent<HeaderProps> = ({ selectedMenu }) => {
     </Styles.Wrapper>
   )
 }
-
-export default Header

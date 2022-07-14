@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 import { Router } from '~/pages'
-import Header from '~/components/Header/Header'
+import Header from '@components/Header'
 
 const Default: FunctionComponent = () => {
   return (
