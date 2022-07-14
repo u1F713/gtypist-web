@@ -16,7 +16,7 @@
 
     "paths": {
       "~/*": ["src/*"],
-      "@app/*": ["src/app/*"]
+      "@app": ["src/components/App/"]
     }
   },
   "exclude": ["node_modules"]

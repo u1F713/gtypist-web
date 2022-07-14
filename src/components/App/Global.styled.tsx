@@ -1,15 +1,15 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  ::selection {
-    color: ${(props) => props.theme.selection_foreground};
-    background-color: ${(props) => props.theme.selection_background};
-  }
-
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  ::selection {
+    color: ${(props) => props.theme.selection_foreground};
+    background-color: ${(props) => props.theme.selection_background};
   }
 
   body {

@@ -1,12 +1,12 @@
 import { FunctionComponent } from 'react'
 import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
-import GlobalStyle from '~/styles/global.styled'
-import TangoDark from '~/styles/themes/tango-dark'
-import Default from './layouts/default'
-import store from './store/store'
+import GlobalStyle from './Global.styled'
+import TangoDark from './themes/tango-dark'
+import Default from '~/layouts/default'
+import store from '~/store/store'
 
-const App: FunctionComponent = () => {
+export const App: FunctionComponent = () => {
   return (
     <Provider store={store}>
       <ThemeProvider theme={TangoDark}>
@@ -16,5 +16,3 @@ const App: FunctionComponent = () => {
     </Provider>
   )
 }
-
-export default App
