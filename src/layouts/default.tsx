@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react'
-import Router from '~/pages/router'
+import Router from '@pages/router'
 import Header from '@components/Header'
 
 const Default: FunctionComponent = () => {
