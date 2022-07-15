@@ -3,7 +3,7 @@ import { useGetInputKey } from '~/features/typist/text'
 import * as S from './Textbox.styled'
 
 export const TextBox: FunctionComponent = () => {
-  const { text } = useGetInputKey()
+  const { text } = useGetInputKey('asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj')
 
   return (
     <div>
