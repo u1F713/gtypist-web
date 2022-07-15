@@ -1,25 +1,13 @@
-import { FunctionComponent, useCallback, useEffect, useRef, useState } from 'react'
-// import * as Styles from './Textbox.styled'
+import { FunctionComponent } from 'react'
+import { useGetInputKey } from '~/features/typist/text'
+import * as S from './Textbox.styled'
 
 export const TextBox: FunctionComponent = () => {
-  const boxRef = useRef<HTMLElement>(null)
-  const [text, setText] = useState<string>('')
-  const handleInputKey = useCallback((event: { key: string }) => {
-    const { key } = event
-    setText((prevText) => `${prevText}${key}`)
-  }, [])
-
-  useEffect(() => {
-    if (boxRef?.current != null) {
-      globalThis.addEventListener('keydown', handleInputKey)
-    }
-
-    return () => globalThis.removeEventListener('keydown', handleInputKey)
-  }, [handleInputKey])
+  const { text } = useGetInputKey()
 
   return (
     <div>
-      <article ref={boxRef}>{text}</article>
+      <S.BoxStyled>{text}</S.BoxStyled>
     </div>
   )
 }
