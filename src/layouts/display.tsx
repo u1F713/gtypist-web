@@ -1,11 +1,11 @@
 import { nanoid } from '@reduxjs/toolkit'
 import { FunctionComponent, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
+import TextBox from '~/components/Textbox'
 import { lessonsActions } from '~/features/lessons/lessons.slice'
 import { useAppSelector } from '~/store/app.selectors'
-import * as Styles from './Display.styled'
 
-export const Display: FunctionComponent = () => {
+const Display: FunctionComponent = () => {
   const dispatch = useDispatch()
   const lesson = useAppSelector((state) => state.lessons)
   const lessonId = useAppSelector((state) => state.lessons.ids[0])
@@ -29,7 +29,9 @@ export const Display: FunctionComponent = () => {
     <section>
       <p>{lesson.entities[lessonId]?.description}</p>
       <p>{lesson.entities[lessonId]?.text}</p>
-      <Styles.TextBox name="" id="" autoComplete="off" autoCorrect="off" spellCheck="false" />
+      <TextBox />
     </section>
   )
 }
+
+export default Display
