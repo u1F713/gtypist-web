@@ -7,6 +7,17 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  input, textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: currentColor;
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+
   ::selection {
     color: ${(props) => props.theme.selection_foreground};
     background-color: ${(props) => props.theme.selection_background};
