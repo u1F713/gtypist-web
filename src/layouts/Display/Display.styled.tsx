@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Input = styled.input`
+export const TextBox = styled.textarea`
   display: block;
   width: 100%;
   font-size: 1em;
@@ -9,4 +9,5 @@ export const Input = styled.input`
   text-decoration: none;
   border: none;
   outline: none;
+  resize: none;
 `

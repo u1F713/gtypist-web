@@ -29,7 +29,7 @@ export const Display: FunctionComponent = () => {
     <section>
       <p>{lesson.entities[lessonId]?.description}</p>
       <p>{lesson.entities[lessonId]?.text}</p>
-      <Styles.Input type="text" name="" id="" autoComplete="disable" />
+      <Styles.TextBox name="" id="" autoComplete="off" autoCorrect="off" spellCheck="false" />
     </section>
   )
 }
