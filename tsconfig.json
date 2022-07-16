@@ -18,6 +18,7 @@
     "paths": {
       "~/*": ["src/*"],
       "@components/*": ["src/components/*"],
+      "@feat/*": ["src/features/*"],
       "@pages/*": ["src/pages/*"],
       "@app": ["src/components/App/"]
     }
