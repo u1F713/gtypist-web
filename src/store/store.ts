@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import lessons from 'src/features/lessons/lessons.slice'
+import lessons from '~/features/lessons/state/lessons.slice'
 import menu from '~/features/navigation/menu/state/menu.slice'
 
 const store = configureStore({

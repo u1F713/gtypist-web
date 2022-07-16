@@ -1,34 +1,19 @@
-import { nanoid } from '@reduxjs/toolkit'
 import { FunctionComponent, useEffect } from 'react'
-import { useDispatch } from 'react-redux'
 import TextBox from '~/components/Textbox'
-import { lessonsActions } from '~/features/lessons/lessons.slice'
-import { useAppSelector } from '~/store/app.selectors'
+import { useLessons } from '~/features/lessons'
+import lesson_1 from '~/content/lessons/test.json'
 
 const Display: FunctionComponent = () => {
-  const dispatch = useDispatch()
-  const lesson = useAppSelector((state) => state.lessons)
-  const lessonId = useAppSelector((state) => state.lessons.ids[0])
+  const { lessons, setLessons } = useLessons()
 
   useEffect(() => {
-    dispatch(
-      lessonsActions.received({
-        lessons: [
-          {
-            id: nanoid(),
-            description: 'lesson Q1',
-            serie: 'serie Q',
-            text: 'asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj'
-          }
-        ]
-      })
-    )
+    setLessons([lesson_1])
   }, [])
 
   return (
     <section>
-      <p>{lesson.entities[lessonId]?.description}</p>
-      <p>{lesson.entities[lessonId]?.text}</p>
+      <p>{lessons.entities[lessons.ids[0]]?.description}</p>
+      <p>{lessons.entities[lessons.ids[0]]?.text}</p>
       <TextBox />
     </section>
   )

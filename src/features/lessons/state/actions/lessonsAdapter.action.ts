@@ -1,5 +1,5 @@
 import { createEntityAdapter } from '@reduxjs/toolkit'
-import { ILesson } from '../lesson.entity'
+import { ILesson } from '../../models/lesson.entity'
 
 const lessonsAdapter = createEntityAdapter<ILesson>({
   selectId: (lesson) => lesson.id,

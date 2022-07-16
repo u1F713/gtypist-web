@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { ILesson } from './lesson.entity'
+import { ILesson } from '../models/lesson.entity'
 import lessonsAdapter from './actions/lessonsAdapter.action'
 
 const lessonsSlice = createSlice({
