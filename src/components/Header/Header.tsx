@@ -2,13 +2,13 @@ import { FunctionComponent } from 'react'
 import * as Styles from './Header.styled'
 
 interface HeaderProps {
-  selectedMenu: string
+  selected: string
 }
 
-export const Header: FunctionComponent<HeaderProps> = ({ selectedMenu }) => {
+export const Header: FunctionComponent<HeaderProps> = ({ selected }) => {
   return (
     <Styles.Wrapper>
-      <li>{selectedMenu}</li>
+      <li>{selected}</li>
       <li>
         <Styles.AppInfo>
           <span className="app-name">{`\u2800${APP_NAME}\u2800`}</span>
