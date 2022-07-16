@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import lessons from '~/features/lessons/state/lessons.slice'
-import menu from '~/features/navigation/menu/state/menu.slice'
+import { reducer as lessons } from '~/features/lessons'
+import { reducer as menu } from '@feat/navigation/menu/'
 
 const store = configureStore({
   reducer: { lessons, menu }

@@ -12,4 +12,3 @@ const menuSlice = createSlice({
 })
 
 export const { reducer, actions } = menuSlice
-export default menuSlice.reducer

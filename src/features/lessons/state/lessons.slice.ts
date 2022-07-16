@@ -13,4 +13,4 @@ const lessonsSlice = createSlice({
 })
 
 export const lessonsActions = lessonsSlice.actions
-export default lessonsSlice.reducer
+export const { reducer } = lessonsSlice
