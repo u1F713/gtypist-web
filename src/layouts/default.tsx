@@ -20,8 +20,6 @@ const Default: FunctionComponent = () => {
     )
   }, [])
 
-  useEffect(() => console.log(selected), [selected])
-
   return (
     <main>
       <Header selected={selected} />
