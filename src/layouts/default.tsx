@@ -1,10 +1,13 @@
-import { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent, ReactNode, useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '~/store/app.selectors'
 import { actions } from '~/features/navigation/menu/state/menu.slice'
-import Router from '@pages/router'
 import Header from '@components/Header'
 
-const Default: FunctionComponent = () => {
+interface DefaultLayoutProps {
+  children?: ReactNode
+}
+
+const Default: FunctionComponent<DefaultLayoutProps> = ({ children }) => {
   const { selected } = useAppSelector((state) => state.menu)
   const dispatch = useAppDispatch()
 
@@ -23,7 +26,7 @@ const Default: FunctionComponent = () => {
   return (
     <main>
       <Header selected={selected} />
-      <Router />
+      {children}
     </main>
   )
 }

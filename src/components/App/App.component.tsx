@@ -3,15 +3,15 @@ import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './Global.styled'
 import TangoDark from './themes/tango-dark'
-import Default from '~/layouts/default'
 import store from '~/store/store'
+import Router from './App.router'
 
 export const App: FunctionComponent = () => {
   return (
     <Provider store={store}>
       <ThemeProvider theme={TangoDark}>
         <GlobalStyle />
-        <Default />
+        <Router />
       </ThemeProvider>
     </Provider>
   )
