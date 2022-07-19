@@ -28,6 +28,7 @@ specifiers:
   typescript: '*'
   vite: ^2.9.14
   vite-tsconfig-paths: ^3.5.0
+  yaml: ^2.1.1
 
 dependencies:
   react: 18.2.0
@@ -59,6 +60,7 @@ devDependencies:
   typescript: 4.7.4
   vite: 2.9.14
   vite-tsconfig-paths: 3.5.0_vite@2.9.14
+  yaml: 2.1.1
 
 packages:
 
@@ -2772,4 +2774,9 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: true
+
+  /yaml/2.1.1:
+    resolution: {integrity: sha512-o96x3OPo8GjWeSLF+wOAbrPfhFOGY0W00GNaxCDv+9hkcDJEnev1yh8S7pgHF0ik6zc8sQLuL8hjHjJULZp8bw==}
+    engines: {node: '>= 14'}
     dev: true
