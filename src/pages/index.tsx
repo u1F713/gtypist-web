@@ -10,7 +10,7 @@ const IndexPage: FunctionComponent = () => {
 
   return (
     <Default>
-      {JSON.stringify(series.entities[lessonId]?.name)}
+      {JSON.stringify(series.entities[lessonId]?.lessons[0].intro)}
       <p></p>
       <Display />
     </Default>
