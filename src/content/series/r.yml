@@ -1,0 +1,15 @@
+---
+name: 'Long QWERTY course'
+lessons:
+  - R1:
+      - intro: |+
+          In the R series lessons we work on speed and accuracy.
+
+      - state:
+          [
+            { description: '(1) Try this', drill: 'asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj' },
+            {
+              description": "Now this (use 'k' finger for 'i' and 'd' finger for 'e'):",
+              drill: 'asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij'
+            }
+          ]

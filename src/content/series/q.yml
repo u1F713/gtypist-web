@@ -2,7 +2,7 @@
 name: "Quick QWERTY course"
 lessons:
   - Q1:
-      - intro: |+
+    - intro: |+
           In the Q series of lessons, we will be learning to touch-type on the standard
           keyboard.  I will introduce you to each letter on the keyboard, one at a time.
           By the time you have completed this series, you will be able to type the entire
@@ -22,14 +22,14 @@ lessons:
           If you can already touch type, you should be able to go through these lessons
           fairly quickly.  Or, you may want to go directly to the S series.
 
-      - states:
-          [
-            {
-              description: "(1) Try this",
-              drill: "asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj",
-            },
-            {
-              description": "Now this (use 'k' finger for 'i' and 'd' finger for 'e'):",
-              drill: "asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij",
-            },
-          ]
+    - states:
+      [
+         {
+           description: "(1) Try this",
+           drill: "asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj",
+         },
+         {
+           description": "Now this (use 'k' finger for 'i' and 'd' finger for 'e'):",
+           drill: "asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij",
+         },
+      ]
