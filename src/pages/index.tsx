@@ -5,14 +5,12 @@ import Display from '~/layouts/display'
 
 const IndexPage: FunctionComponent = () => {
   const { series } = useSeries()
-
-  const lessonId = useMemo(() => series.ids[0], [series])
+  const lessonId = useMemo(() => series.entities[series.ids[0]]?.id, [series])
 
   return (
     <Default>
-      {JSON.stringify(series.entities[lessonId]?.lessons[0].intro)}
       <p></p>
-      <Display />
+      <Display id={lessonId?.toString() ?? '0'} />
     </Default>
   )
 }
