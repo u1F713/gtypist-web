@@ -8,12 +8,14 @@ lessons:
         keyboard.  I will introduce you to each letter on the keyboard, one at a time.
         By the time you have completed this series, you will be able to type the entire
         alphabet, the numbers, and most of the punctuation keys by touch.
+        
 
         If you have never taken any lessons in typing before, please be patient.  Typing
         is not difficult but it does take a lot of practice.  Avoid the tendency to
         look down at your fingers while typing.  This is a very bad habit and is hard
         to break later.  If you hit the wrong key, I will let you know.  (But, I won't
         tell anyone else, so don't worry about it.)
+
 
         If you have always used the hunt-and-peck method, you will have an even harder
         time keeping yourself from looking.  Don't be surprised if you find touch
@@ -22,6 +24,7 @@ lessons:
 
         If you can already touch type, you should be able to go through these lessons
         fairly quickly.  Or, you may want to go directly to the S series.",
+
       states:
         [
           {
