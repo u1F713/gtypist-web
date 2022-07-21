@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 import TextBox from '~/components/Textbox'
 import { useAppSelector } from '~/store/app.selectors'
+import Intro from './components/Intro'
 
 interface DisplayProps {
   id: string
@@ -11,7 +12,7 @@ const Display: FunctionComponent<DisplayProps> = ({ id }) => {
 
   return (
     <section>
-      {lesson?.intro}
+      <Intro text={lesson?.intro ?? ''} />
       <TextBox />
     </section>
   )
