@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { reducer as lessons } from '~/features/lessons'
 import { reducer as menu } from '@feat/navigation/menu/'
 import { series } from '~/features/series'
 
 const store = configureStore({
-  reducer: { lessons, series, menu }
+  reducer: {
+    series,
+    menu
+  }
 })
 
 export type RootState = ReturnType<typeof store.getState>

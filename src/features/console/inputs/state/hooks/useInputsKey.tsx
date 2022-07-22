@@ -24,12 +24,12 @@ const inputReducer = (state: InputState, action: KeyReducerAction): InputState =
   return { key: action.payload }
 }
 
-export const useInputsKeys = (): { inputstate: InputState; handleInputKey: (e: KeyboardEvent) => void } => {
-  const [inputstate, dispatch] = useReducer(inputReducer, { key: '' })
+export const useInputsKeys = (): { inputState: InputState; handleInputKey: (e: KeyboardEvent) => void } => {
+  const [inputState, dispatch] = useReducer(inputReducer, { key: '' })
 
   const handleInputKey = useCallback((e: KeyboardEvent) => {
     dispatch({ type: e, payload: e.key })
   }, [])
 
-  return { inputstate, handleInputKey }
+  return { inputState, handleInputKey }
 }

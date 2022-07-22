@@ -5,3 +5,5 @@ export const BoxStyled = styled.code`
   height: 1em;
   word-wrap: break-word;
 `
+
+export const TextLabel = styled.p``

@@ -1,21 +1,19 @@
-import { FunctionComponent } from 'react'
-import TextBox from '~/components/Textbox'
+import { FC } from 'react'
 import { useAppSelector } from '~/store/app.selectors'
-import Intro from './components/Intro'
+import MemoizedTextEntry from './components/TextEntry'
 
 interface DisplayProps {
   id: string
 }
 
-const Display: FunctionComponent<DisplayProps> = ({ id }) => {
+const Display: FC<DisplayProps> = ({ id }) => {
   const lesson = useAppSelector((state) => state.series.entities[id]?.lessons[0])
 
-  return (
-    <section>
-      <Intro text={lesson?.intro ?? ''} />
-      <TextBox />
-    </section>
-  )
+  if (lesson?.states[1] == null) {
+    return <div>...</div>
+  }
+
+  return <MemoizedTextEntry label={lesson?.states[0].description} drill={lesson.states[1].drill} />
 }
 
 export default Display

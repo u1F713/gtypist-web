@@ -1,25 +1,19 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { useInputsKeys } from '~/features/console/inputs'
 
-export const useGetInputKey = (compare: string): { text: string } => {
-  const [text, setText] = useState<string>('')
-  const keyIndex = useRef(-1)
-
-  const handleInputKey = useCallback((e: KeyboardEvent) => {
-    e.preventDefault()
-    keyIndex.current++
-
-    if (keyIndex.current > compare.length) return null
-    if (e.key !== compare[keyIndex.current]) {
-      return setText((prevText) => `${prevText}^`)
-    }
-    setText((prevText) => `${prevText}${e.key}`)
-  }, [])
+export const useGetInputKey = (compare: string): { inputText: string } => {
+  const { inputState, handleInputKey } = useInputsKeys()
+  const [inputText, setInputText] = useState<string>('')
+  const keyIndex = useRef<number>(-1)
 
   useEffect(() => {
-    globalThis.addEventListener('keydown', handleInputKey)
+    keyIndex.current++
 
-    return () => globalThis.removeEventListener('keydown', handleInputKey)
-  }, [handleInputKey])
+    if (inputState.key !== compare[keyIndex.current]) {
+      return setInputText((prevText) => `${prevText}^`)
+    }
+    setInputText((prevText) => `${prevText}${inputState.key}`)
+  }, [])
 
-  return { text }
+  return { inputText }
 }
