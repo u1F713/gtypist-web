@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { useAppSelector } from '~/store/app.selectors'
-import MemoizedTextEntry from './components/TextEntry'
+import TextEntry from './components/TextEntry'
 
 interface DisplayProps {
   id: string
@@ -13,7 +13,7 @@ const Display: FC<DisplayProps> = ({ id }) => {
     return <div>...</div>
   }
 
-  return <MemoizedTextEntry label={lesson?.states[0].description} drill={lesson.states[1].drill} />
+  return <TextEntry label={lesson?.states[0].description} drill={lesson.states[1].drill} />
 }
 
 export default Display

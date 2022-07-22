@@ -1,6 +1,5 @@
-import { FunctionComponent, ReactNode, useEffect } from 'react'
-import { useAppDispatch, useAppSelector } from '~/store/app.selectors'
-import { actions } from '~/features/navigation/menu/state/menu.slice'
+import { FunctionComponent, ReactNode } from 'react'
+import { useAppSelector } from '~/store/app.selectors'
 import Header from '@components/Header'
 
 interface DefaultLayoutProps {
@@ -9,19 +8,6 @@ interface DefaultLayoutProps {
 
 const Default: FunctionComponent<DefaultLayoutProps> = ({ children }) => {
   const { selected } = useAppSelector((state) => state.menu)
-  const dispatch = useAppDispatch()
-
-  useEffect(() => {
-    dispatch(
-      actions.setMenu({
-        menu: {
-          selected: 'The following 10 lesson series are available',
-          description: '',
-          options: []
-        }
-      })
-    )
-  }, [])
 
   return (
     <main>
