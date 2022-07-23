@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useInputsKeys } from '~/features/console/inputs'
 
 export const useGetInputKey = (compare: string): { inputText: string } => {
-  const { inputState, handleInputKey } = useInputsKeys()
+  const { inputState } = useInputsKeys()
   const [inputText, setInputText] = useState<string>('')
   const keyIndex = useRef<number>(-1)
 
