@@ -1,21 +1,13 @@
-import { FunctionComponent, useMemo } from 'react'
-import { useSeries } from '~/features/series/state/useSeries'
+import { FunctionComponent } from 'react'
 import Default from '~/layouts/default'
-import Display from '~/layouts/display'
+import NavigationMenu from '~/layouts/navigation/'
 
 const IndexPage: FunctionComponent = () => {
-  const { series } = useSeries()
-  const lessonId = useMemo(() => series.entities[series.ids[0]]?.id, [series])
-
-  if (lessonId != null) {
-    return (
-      <Default>
-        <Display id={lessonId} />
-      </Default>
-    )
-  }
-
-  return <span>...</span>
+  return (
+    <Default>
+      <NavigationMenu />
+    </Default>
+  )
 }
 
 export default IndexPage

@@ -1,1 +1,1 @@
-export * from './state/menu.slice'
+export * from './state/slice'
