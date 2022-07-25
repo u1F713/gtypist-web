@@ -18,7 +18,7 @@ const NavigationMenu: FC = () => {
         }
       })
     )
-  }, [])
+  }, [series])
 
   return (
     <section>
