@@ -18,8 +18,9 @@
     "paths": {
       "~/*": ["src/*"],
       "@components/*": ["src/components/*"],
-      "@feat/*": ["src/features/*"],
-      "@pages/*": ["src/pages/*"]
+      "@pages/*": ["src/pages/*"],
+      "@feats/*": ["src/features/*"],
+      "@store": ["src/redux/"]
     }
   },
   "exclude": ["node_modules"]
