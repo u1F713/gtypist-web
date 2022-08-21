@@ -1,8 +1,8 @@
-import { createRoot } from 'react-dom/client'
 import React from 'react'
-import App from '@app'
+import ReactDom from 'react-dom/client'
+import App from './App'
 
-const root = createRoot(document.querySelector('#root') ?? document.body)
+const root = ReactDom.createRoot(document.querySelector('#root') ?? document.body)
 
 root.render(
   <React.StrictMode>
