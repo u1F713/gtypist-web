@@ -10,7 +10,8 @@
     "build": "vite build",
     "server": "vite preview",
     "dev": "vite",
-    "lint": "eslint --fix \"{src,test}/**/*.tsx\""
+    "lint": "eslint --fix \"{src,test}/**/*.tsx\"",
+    "test:unit": "vitest"
   },
   "dependencies": {
     "react": "^18.2.0",
