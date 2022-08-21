@@ -20,7 +20,8 @@
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
       "@feats/*": ["src/features/*"],
-      "@store": ["src/redux/"]
+      "@store": ["src/redux/"],
+      "@test-utils": ["__test__/utils"]
     }
   },
   "exclude": ["node_modules"]
