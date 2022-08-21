@@ -8,6 +8,10 @@ export default defineConfig({
     APP_NAME: JSON.stringify(process.env.npm_package_name),
     APP_VERSION: JSON.stringify(process.env.npm_package_version)
   },
+  test: {
+    include: ['test/**/*.spec.ts'],
+    environment: 'jsdom'
+  },
   server: {
     port: 4444
   }
