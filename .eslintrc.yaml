@@ -11,8 +11,8 @@ extends:
   ]
 parser: "@typescript-eslint/parser"
 parserOptions:
-  project: ["tsconfig.json", "src", "test"]
+  project: [tsconfig.json, src, test]
 settings:
   react:
     version: detect
-ignorePatterns: ["dist", "build", "node_modules"]
+ignorePatterns: [dist, build, node_modules]
