@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
-import { store } from './store'
+import { store } from './redux'
 import { GlobalStyle, TangoDark } from './features/styles'
 
 const App: FunctionComponent = () => {
