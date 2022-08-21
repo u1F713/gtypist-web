@@ -12,7 +12,7 @@
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "noEmit": true,
-    "types": ["vite/client"],
+    "types": ["vitest", "vite/client"],
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
 
     "paths": {

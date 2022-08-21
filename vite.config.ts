@@ -9,7 +9,7 @@ export default defineConfig({
     APP_VERSION: JSON.stringify(process.env.npm_package_version)
   },
   test: {
-    include: ['test/**/*.spec.ts'],
+    include: ['**/*.test.ts'],
     environment: 'jsdom'
   },
   server: {
