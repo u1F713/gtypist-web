@@ -7,17 +7,11 @@ describe('Test Highlight component', () => {
   const currentElement = (): HTMLElement => screen.getByTestId('current-element')
 
   test('text spacing l2 r4', async () => {
-    render(
-      <Highlight marginLeft={2} marginRight={4}>
-        testing
-      </Highlight>,
-      { wrapper: Wrapper }
-    )
-
+    render(<Highlight text=" testing  " />, { wrapper: Wrapper })
     await waitFor(() => {
       expect(currentElement()).toBeDefined()
     })
 
-    expect(currentElement().textContent?.length).toBe(13)
+    expect(currentElement().textContent?.length).toBe(10)
   })
 })
