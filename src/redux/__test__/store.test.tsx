@@ -1,8 +1,9 @@
 import { describe, test, expect } from 'vitest'
 import { store } from '../'
+import typist from '@feats/typist/reducer'
 
 describe('Handle', () => {
-  test('should by a empty object', () => {
-    expect(store.getState()).toEqual({})
+  test('initial state', () => {
+    expect(store.getState()).toEqual({ typist: typist(undefined, { type: undefined }) })
   })
 })
