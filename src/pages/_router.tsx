@@ -3,7 +3,7 @@ import { BrowserRouter, BrowserRouterProps, Route, Routes } from 'react-router-d
 
 const Home = lazy(async () => await import('./Home').then())
 
-const RouterAdapter: FunctionComponent<BrowserRouterProps> = (opts) => {
+const RootRouter: FunctionComponent<BrowserRouterProps> = (opts) => {
   return (
     <BrowserRouter {...opts}>
       <Routes>
@@ -13,4 +13,4 @@ const RouterAdapter: FunctionComponent<BrowserRouterProps> = (opts) => {
   )
 }
 
-export default RouterAdapter
+export default RootRouter
